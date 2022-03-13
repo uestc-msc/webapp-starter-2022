@@ -4,6 +4,8 @@ Start your first web application with Vue 3 and Django 4!
 
 ## 2022.2.26
 
+[录屏](http://b23.tv/awoyG9Y)
+
 ### Web 开发的门槛
 
 * 任意一门编程语言，主要是了解变量、循环结构、分支结构、函数、类（或结构体）的概念
@@ -84,3 +86,42 @@ pnpm i
 点击 `package.json` 的绿色箭头，或执行 `pnpm run dev` 启动项目。
 
 去组件库的文档里面找代码，把它拷贝到项目里，然后运行即可创建一个最简单的组件。
+
+
+## 2020.3.12
+
+## 前后端交互协议
+
+交互协议：**http**/grpc/websocket
+
+数据格式：xml/**json**/protobuf
+
+REST API：**GET**/**POST**/**PUT**/**DELETE**
+
+Django REST Framework
+
+## 数据库配置
+
+Docker + PostgreSQL
+
+```shell
+docker run -d --name django_starter_postgres -p 5432:5432 -e POSTGRES_PASSWORD=test --restart always postgres
+```
+
+## url 接上函数 -- 路由 / 指路
+
+[urls.py](django-starter/django_starter/urls.py)
+
+## 编写 models
+
+[models.py](django-starter/cards/models.py)
+
+## 编写 serializers
+
+[serializers.py](django-starter/cards/serializers.py)
+
+## 编写 views
+
+[views.py](django-starter/cards/views.py)
+
+[urls.py](django-starter/cards/urls.py)
